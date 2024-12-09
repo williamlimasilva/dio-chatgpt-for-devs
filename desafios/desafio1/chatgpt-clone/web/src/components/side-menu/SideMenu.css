@@ -1,0 +1,52 @@
+.side-menu {
+    width: 260px;
+    padding: 15px;
+    background-color: #202123;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.side-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.side-menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.side-menu-button span {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
